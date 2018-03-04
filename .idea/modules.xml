@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.bt.iml" filepath="$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.bt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.bt_main.iml" filepath="$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.bt_main.iml" group="rocks.inspectit.jaeger.bt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.bt_test.iml" filepath="$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.bt_test.iml" group="rocks.inspectit.jaeger.bt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.dw.iml" filepath="$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.dw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.dw_main.iml" filepath="$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.dw_main.iml" group="rocks.inspectit.jaeger.dw" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.dw_test.iml" filepath="$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.dw_test.iml" group="rocks.inspectit.jaeger.dw" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.model.iml" filepath="$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.model.iml" group="rocks.inspectit.jaeger.model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.model_main.iml" filepath="$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.model_main.iml" group="rocks.inspectit.jaeger.model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.model_test.iml" filepath="$PROJECT_DIR$/.idea/modules/rocks.inspectit.jaeger.model_test.iml" group="rocks.inspectit.jaeger.model" />
+    </modules>
+  </component>
+</project>

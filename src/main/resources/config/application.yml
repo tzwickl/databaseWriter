@@ -1,0 +1,24 @@
+kafka:
+  bootstrapServers: localhost:9092
+  groupId: databaseWriter
+  inputTopic: businessTraces
+  outputTopic: outputTraces
+
+elasticsearch:
+  host: localhost
+  doc: traces
+  port: 9200
+  scheme: html
+
+cassandra:
+ host: localhost
+ keyspace: traces
+
+input: kafka
+output: elasticsearch
+serviceName: AppFin
+
+startTime: 1512833158
+endTime: 1512933158
+interval: 1
+
