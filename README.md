@@ -1,8 +1,6 @@
-# Business Transaction Detector
+# Database Writer
 
-Reads Jaeger traces from a datasource, analyzes them in order to find all business transactions and attaches the found 
-business transaction as a tag to the traces. 
-The tag is called `business_transaction` and can be found in the `tags` field within the trace.
+Reads Jaeger traces from a datasource, transforms them and writes them back to a different datasource.
 
 ## Run with Gradle 
 Example of how to run the application with gradle:
@@ -26,13 +24,13 @@ Available configuration properties in the application.yml:
 ```
 kafka:
   bootstrapServers: localhost:9092
-  groupId: businessTransactionAnalyzer
-  inputTopic: traces
-  outputTopic: businessTraces
+  groupId: databaseWriter
+  inputTopic: businessTraces
+  outputTopic: outputTraces
 
 elasticsearch:
   host: localhost
-  doc: jaeger-span-2017-12-09
+  doc: traces
   port: 9200
   scheme: html
 
@@ -40,7 +38,8 @@ cassandra:
  host: localhost
  keyspace: traces
 
-database: kafka
+input: kafka
+output: elasticsearch
 serviceName: AppFin
 
 startTime: 1512833158
