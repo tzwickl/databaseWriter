@@ -2,11 +2,11 @@ package rocks.inspectit.jaeger.dw;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import rocks.inspectit.jaeger.connectors.IDatabase;
+import rocks.inspectit.jaeger.connectors.cassandra.Cassandra;
+import rocks.inspectit.jaeger.connectors.elasticsearch.Elasticsearch;
+import rocks.inspectit.jaeger.connectors.kafka.Kafka;
 import rocks.inspectit.jaeger.dw.analyzer.TracesAnalyzer;
-import rocks.inspectit.jaeger.dw.connectors.IDatabase;
-import rocks.inspectit.jaeger.dw.connectors.cassandra.Cassandra;
-import rocks.inspectit.jaeger.dw.connectors.elasticsearch.Elasticsearch;
-import rocks.inspectit.jaeger.dw.connectors.kafka.Kafka;
 import rocks.inspectit.jaeger.model.config.Configuration;
 import rocks.inspectit.jaeger.model.trace.elasticsearch.ExtendedTrace;
 import rocks.inspectit.jaeger.model.trace.kafka.Trace;
