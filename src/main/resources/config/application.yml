@@ -6,9 +6,9 @@ kafka:
 
 elasticsearch:
   host: localhost
-  doc: traces
+  index: traces
   port: 9200
-  scheme: html
+  scheme: http
 
 cassandra:
  host: localhost

@@ -2,7 +2,7 @@ package rocks.inspectit.jaeger.dw;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import rocks.inspectit.jaeger.connectors.IDatabase;
+import rocks.inspectit.jaeger.connectors.IDatasource;
 import rocks.inspectit.jaeger.connectors.cassandra.Cassandra;
 import rocks.inspectit.jaeger.connectors.elasticsearch.Elasticsearch;
 import rocks.inspectit.jaeger.connectors.kafka.Kafka;
@@ -26,7 +26,7 @@ public class Analyzer {
     }
 
     public int start() {
-        IDatabase input = null;
+        IDatasource input = null;
 
         switch (configuration.getInput()) {
             case CASSANDRA:
@@ -46,7 +46,7 @@ public class Analyzer {
                 return 1;
         }
 
-        IDatabase output = null;
+        IDatasource output = null;
 
         switch (configuration.getOutput()) {
             case CASSANDRA:
@@ -62,7 +62,7 @@ public class Analyzer {
                 logger.info("Using " + KAFKA + " for output");
                 break;
             default:
-                logger.error(configuration.getOutput() + " is not a known database!");
+                logger.error(configuration.getOutput() + " is not a known datasource!");
                 return 1;
         }
 
@@ -102,7 +102,7 @@ public class Analyzer {
         return 0;
     }
 
-    private Long run(IDatabase input, IDatabase output, String serviceName, Long startTime, Long endTime) {
+    private Long run(IDatasource input, IDatasource output, String serviceName, Long startTime, Long endTime) {
         logger.info("###############_START_###############");
         List<Trace> traces;
 
