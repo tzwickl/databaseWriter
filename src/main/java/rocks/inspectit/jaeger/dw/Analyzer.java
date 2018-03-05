@@ -38,7 +38,7 @@ public class Analyzer {
                 logger.info("Using " + ELASTICSEARCH + " for input");
                 break;
             case KAFKA:
-                input = new Kafka(configuration.getServiceName(), configuration.getKafka());
+                input = new Kafka(configuration.getKafka());
                 logger.info("Using " + KAFKA + " for input");
                 break;
             default:
@@ -58,7 +58,7 @@ public class Analyzer {
                 logger.info("Using " + ELASTICSEARCH + " for output");
                 break;
             case KAFKA:
-                output = new Kafka(configuration.getServiceName(), configuration.getKafka());
+                output = new Kafka(configuration.getKafka());
                 logger.info("Using " + KAFKA + " for output");
                 break;
             default:
