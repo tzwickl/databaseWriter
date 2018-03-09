@@ -16,6 +16,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 version = 1.0
 def mainClass = 'rocks.inspectit.jaeger.dw.Main'
+mainClassName = 'rocks.inspectit.jaeger.dw.Main'
 
 dependencies {
     compile 'org.projectlombok:lombok:1.16.18'
